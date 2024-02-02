@@ -18,6 +18,23 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <distributionManagement>
+
+    <repository>
+        <id>nexus</id>
+        <name>releases</name>
+        <url>http://10.0.0.80:8081/repository/myorg-maven-hosted-repo/</url>
+    </repository>
+
+    <snapshotRepository>
+        <id>nexus</id>
+        <name>snapshots</name>
+        <url>http://10.0.0.80:8081/repository/myorg-maven-hosted-repo/</url>
+    </snapshotRepository>
+</distributionManagement>
+
+  
   <build>
     <pluginManagement>
       <plugins>
