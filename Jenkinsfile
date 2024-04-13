@@ -9,7 +9,7 @@ pipeline {
       }
       stage('Maven Build') {
           steps {
-              sh 'mvn clean install -Dmaven.repo.local=http://localhost:8081/repository/assign-maven-group/'
+              sh 'mvn clean install -Dmaven.repo.local=http://localhost:8081/repository/assign-maven-proxy/'
           }
       }
     }
